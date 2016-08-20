@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crystal Collector</title>
+		<!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+	</head>
+	<body>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+		<div id="container">
+			<div class="header">
+				<div id="Game_Title">
+						<h1><strong>Crystal Collector!</strong></h1>
+				</div>
+			</div>
+			<div id="section">
+				<ul style="list-style-type: none;">
+					<li>You will be given a random number at the start of the game.</li>
+					<p></p>
+					<li>There are four crystals below.  By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+					<p></p>
+					<li>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+					<p></p>
+					<li>The value of each crystal is hidden from you until you click on it.</li>
+					<p></p>
+					<li>Each time when the game starts, the game will change the values of each crystal.</li>
+				</ul>	
+			</div>
+			<div class="clear"></div>	
+			<div id="computerNumber">
+				<h2><strong>
+				<span id="randomNumber"></span>
+				</strong></h2>
+			</div>
+			<div class="winsAndLosses">
+				<h2>Wins:
+					<span id= "numberWins"></span>
+					</br>
+					Losses:
+					<span id= "numberLosses"></span>
+				</h2>
+			</div>
+			<div class="clear"></div>	
+			<div class="crystals">
+				<span id="red"></span>
+				<img src="assets/images/redCrystal.jpg" class=crystalImage id="first" alt="Red Crystal">
+				<span id="blue"></span>
+				<img src="assets/images/blueCrystal.jpg" class=crystalImage id="second" alt="Blue Crystal">
+				<span id="black"></span>
+				<img src="assets/images/blackCrystal.jpg" class=crystalImage id= "third" alt="Black Crystal">
+				<span id="green"></span>
+				<img src="assets/images/greenCrystal.jpg" class=crystalImage id= "fourth" alt="Green Crystal">
+			</div>
+			<div>
+				<h2>Your total score is: </h2>
+			</div>
+			<div id="userTotal">
+				<h2><strong>
+				<span id="totalNumber"></span>
+				</strong></h2>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+				&copy 2016 Del Randall
+		</div>
+	</body>
+</html>
